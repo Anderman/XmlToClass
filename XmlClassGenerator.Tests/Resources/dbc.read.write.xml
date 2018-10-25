@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <FICR_IN910101NL04 xmlns="urn:hl7-org:v3">
+      <id extension="4CBD2F90-1E9C-4A65-B44C-2915D77E0330" root="2.16.840.1.113883.2.4.3.27.15.99.1.4.1"/>
+      <creationTime value="20180930172905"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="FICR_IN910101NL04" root="2.16.840.1.113883.1.6"/>
+      <profileId extension="4.0" root="2.16.840.1.113883.2.4.3.27.15.12"/>
+      <processingCode code="T"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+        <targetMessage>
+          <id extension="JWOGXFRVCCAAA" root="2.16.528.1.1007.3.3.4021.1.1"/>
+        </targetMessage>
+      </acknowledgement>
+      <receiver>
+        <device>
+          <id nullFlavor="NA"/>
+        </device>
+      </receiver>
+      <sender>
+        <device>
+          <id extension="4" root="2.16.840.1.113883.2.4.3.27.15.99.1"/>
+          <softwareName id="1">2.3.18185-04</softwareName>
+        </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+        <authorOrPerformer typeCode="AUT">
+          <participant>
+            <AssignedDevice>
+              <id extension="4" root="2.16.840.1.113883.2.4.6.6"/>
+            </AssignedDevice>
+          </participant>
+        </authorOrPerformer>
+        <overseer typeCode="RESP">
+          <AssignedPerson>
+            <Organization>
+              <id extension=" " root="2.16.528.1.1007.3.3"/>
+            </Organization>
+          </AssignedPerson>
+        </overseer>
+        <subject>
+          <Declaratieresultset>
+            <id extension="315C8585-C499-41FE-A3A1-0615CCE8CE3D" root="2.16.840.1.113883.2.4.3.27.15.99.1.1.2"/>
+            <code codeSystem="2.16.840.1.113883.2.4.3.27.15.1" code="GROUPER"/>
+            <statusCode code="completed"/>
+            <author>
+              <assignedDevice>
+                <assignedGrouper>
+                  <code codeSystem="2.16.840.1.113883.2.4.3.27.15.99.2" code="P"/>
+                  <lastCalibrationTime value="20171220"/>
+                </assignedGrouper>
+                <certificateText>01</certificateText>
+              </assignedDevice>
+            </author>
+            <component1 typeCode="COMP">
+              <priorityNumber value="1"/>
+              <zorgproductdeclaratie classCode="XACT" moodCode="EVN">
+                <code codeSystem="2.16.840.1.113883.2.4.3.27.15.6" code="14E488"/>
+                <derivedFrom3>
+                  <zorgproduct moodCode="EVN" classCode="XACT">
+                    <code codeSystem="2.16.840.1.113883.2.4.3.27.15.9" code="998418070"/>
+                  </zorgproduct>
+                </derivedFrom3>
+                <reference>
+                  <subtraject>
+                    <id extension="100190701" root="2.16.528.1.1007.3.3.4021.14.3"/>
+                  </subtraject>
+                </reference>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696918" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696919" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696920" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696921" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696922" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696923" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696924" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696925" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696926" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696927" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696928" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696929" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696930" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696931" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696932" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696933" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696934" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696935" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696936" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696937" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696938" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696939" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696940" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696941" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696942" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+                <reference3>
+                  <zorgactiviteit>
+                    <id extension="696943" root="2.16.528.1.1007.3.3.4021.1.12"/>
+                  </zorgactiviteit>
+                </reference3>
+              </zorgproductdeclaratie>
+            </component1>
+            <inFulfillmentOf>
+              <declaratiedataset>
+                <id extension="JWOGXFRVCCAAA" root="2.16.528.1.1007.3.3.4021.14.8"/>
+              </declaratiedataset>
+            </inFulfillmentOf>
+          </Declaratieresultset>
+        </subject>
+      </ControlActProcess>
+    </FICR_IN910101NL04>
+  </Body>
+</Envelope>
