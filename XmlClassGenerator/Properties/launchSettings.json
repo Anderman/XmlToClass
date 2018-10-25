@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "XmlClassGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\git\\Facturatie\\Test\\Vvt.Web.Test\\Resources\\Wmo\\WMO304.xml"
+    }
+  }
+}

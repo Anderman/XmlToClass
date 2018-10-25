@@ -63,13 +63,14 @@ namespace XmlClassGenerator
 					{Tabs(i)}[XmlElement(ElementName = `{name}`{(tmp != ns ? $", Namespace = `{ns}`" : "")})]
 					{Tabs(i)}public {type} {name.ToCamelCase()} {{ get; set; }} = {GetClassInstance(x.b, x.a)};
 					{Tabs(i)}{WriteClass(x.b, i + 1, ns)}";
-					  }))}{Concat(e.Elements().Where(x => !x.HasElements && !x.HasAttributes).Select(x =>
+					  }))}{Concat(e.Elements().Where(x => !x.HasElements && !x.HasAttributes).GroupBy(x => x.Name.LocalName).Select(x => new { a = x.Count(), b = x.First() }).Select(x =>
 					  {
-						  var name = x.Name.LocalName;
-						  var value = GetValue(x.Value);
+						  var name = x.b.Name.LocalName;
 						  return $@"
-					{Tabs(i)}[XmlElement(ElementName = `{name}`{(tmp != ns ? $", Namespace = `{ns}`" : "")})]
-					{Tabs(i)}public string {name.ToCamelCase()} {{ get; set; }} = `{x.Value}`;
+					{Tabs(i)}[XmlElement(ElementName = `{name}`{(tmp != ns ? $", Namespace = `{ns}`" : "")})]{(
+								  x.a==1?$@"
+					{Tabs(i)}public string {name.ToCamelCase()} {{ get; set; }} = `{x.b.Value}`;" :$@"
+					{Tabs(i)}public string[] {name.ToCamelCase()} {{ get; set; }} = {{`{x.b.Value}`}};")}
 						";
 					  }))}
 				{Tabs(i)}}}";
